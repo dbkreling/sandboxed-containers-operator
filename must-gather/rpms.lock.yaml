@@ -4,61 +4,93 @@ lockfileVendor: redhat
 arches:
 - arch: s390x
   packages:
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/s390x/baseos/os/Packages/r/rsync-3.2.5-3.el9.s390x.rpm
-    repoid: ubi-9-for-s390x-baseos-rpms
-    size: 418877
-    checksum: sha256:2d1a87e86fb23bc665b7c7ce8775c73d500ef6e152f15c78493b95638dfb7925
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/s390x/baseos/os/Packages/g/glibc-2.39-58.el10_1.2.s390x.rpm
+    repoid: ubi-10-for-s390x-for-s390x-baseos-rpms
+    size: 1916066
+    checksum: sha256:b7a89e5a6b1ad3d431c04834d52e24c6a1425a43930ee0cd31529a4e48bd97c9
+    name: glibc
+    evr: 2.39-58.el10_1.2
+    sourcerpm: glibc-2.39-58.el10_1.2.src.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/s390x/baseos/os/Packages/g/glibc-common-2.39-58.el10_1.2.s390x.rpm
+    repoid: ubi-10-for-s390x-for-s390x-baseos-rpms
+    size: 361355
+    checksum: sha256:2b2b604282e5c8dd5903a7b0f2384cc211a1af7d5200a9c592c5edd7c6f6b342
+    name: glibc-common
+    evr: 2.39-58.el10_1.2
+    sourcerpm: glibc-2.39-58.el10_1.2.src.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/s390x/baseos/os/Packages/g/glibc-langpack-en-2.39-58.el10_1.2.s390x.rpm
+    repoid: ubi-10-for-s390x-for-s390x-baseos-rpms
+    size: 650071
+    checksum: sha256:9358dacc5912a67e53615ce009782a4ae7fc478020f0c240ea298bdfce3a7807
+    name: glibc-langpack-en
+    evr: 2.39-58.el10_1.2
+    sourcerpm: glibc-2.39-58.el10_1.2.src.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/s390x/baseos/os/Packages/g/glibc-minimal-langpack-2.39-58.el10_1.2.s390x.rpm
+    repoid: ubi-10-for-s390x-for-s390x-baseos-rpms
+    size: 45953
+    checksum: sha256:d884e2c28b5a70314e2ff24b62f49bbeecec0f837542b14f1f1b16c7bcd82209
+    name: glibc-minimal-langpack
+    evr: 2.39-58.el10_1.2
+    sourcerpm: glibc-2.39-58.el10_1.2.src.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/s390x/baseos/os/Packages/r/rsync-3.4.1-2.el10.s390x.rpm
+    repoid: ubi-10-for-s390x-for-s390x-baseos-rpms
+    size: 451218
+    checksum: sha256:53fef8c8416f302e81b2831cabb125286e1d448cc4d2d715b08e8e8799fe64cb
     name: rsync
-    evr: 3.2.5-3.el9
-    sourcerpm: rsync-3.2.5-3.el9.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/s390x/baseos/os/Packages/t/tar-1.34-7.el9.s390x.rpm
-    repoid: ubi-9-for-s390x-baseos-rpms
-    size: 902370
-    checksum: sha256:fa8758bac6a56830de66ad1ab623c87768065bcc6f8242faa42ac4198260d456
+    evr: 3.4.1-2.el10
+    sourcerpm: rsync-3.4.1-2.el10.src.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/s390x/baseos/os/Packages/t/tar-1.35-7.el10.s390x.rpm
+    repoid: ubi-10-for-s390x-for-s390x-baseos-rpms
+    size: 905889
+    checksum: sha256:1ba8db62eb0dabea84aca04f27754435cbf89f739920740f85f3ab344029c3e8
     name: tar
-    evr: 2:1.34-7.el9
-    sourcerpm: tar-1.34-7.el9.src.rpm
-  source:
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/s390x/baseos/source/SRPMS/Packages/r/rsync-3.2.5-3.el9.src.rpm
-    repoid: ubi-9-for-s390x-baseos-source-rpms
-    size: 1306931
-    checksum: sha256:a1fd44e58d1fb5b52b72586c5ef2e12c040428f771cde1d1350b36d3b9155db0
-    name: rsync
-    evr: 3.2.5-3.el9
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/s390x/baseos/source/SRPMS/Packages/t/tar-1.34-7.el9.src.rpm
-    repoid: ubi-9-for-s390x-baseos-source-rpms
-    size: 2261512
-    checksum: sha256:d002c400d29e7305fe8a982ab6b9f49ee7a8780e4574b86fc0c5b3d5510ecb22
-    name: tar
-    evr: 2:1.34-7.el9
+    evr: 2:1.35-7.el10
+    sourcerpm: tar-1.35-7.el10.src.rpm
+  source: []
   module_metadata: []
 - arch: x86_64
   packages:
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/os/Packages/r/rsync-3.2.5-3.el9.x86_64.rpm
-    repoid: ubi-9-for-x86_64-baseos-rpms
-    size: 421930
-    checksum: sha256:b1d90c38b613f2d66dfe0c7c3d067a3ce429f7b2ec5224e560f326fc2fd8d1e5
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/os/Packages/g/glibc-2.39-58.el10_1.2.x86_64.rpm
+    repoid: ubi-10-for-x86_64-for-x86_64-baseos-rpms
+    size: 2213530
+    checksum: sha256:bbad6d7b49869b3904038c8bcb1049889144c6979a32c000d66a3932b869bc17
+    name: glibc
+    evr: 2.39-58.el10_1.2
+    sourcerpm: glibc-2.39-58.el10_1.2.src.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/os/Packages/g/glibc-common-2.39-58.el10_1.2.x86_64.rpm
+    repoid: ubi-10-for-x86_64-for-x86_64-baseos-rpms
+    size: 347613
+    checksum: sha256:fec3de04a7ac83dd0b5f0724a8fe1fb987bbb6d40c340e2058f5365c765900b8
+    name: glibc-common
+    evr: 2.39-58.el10_1.2
+    sourcerpm: glibc-2.39-58.el10_1.2.src.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/os/Packages/g/glibc-langpack-en-2.39-58.el10_1.2.x86_64.rpm
+    repoid: ubi-10-for-x86_64-for-x86_64-baseos-rpms
+    size: 700716
+    checksum: sha256:61ff1f61e86c9dd0923a185ddd72dd93c8f0b286c9da7360826b6986bbe4fc63
+    name: glibc-langpack-en
+    evr: 2.39-58.el10_1.2
+    sourcerpm: glibc-2.39-58.el10_1.2.src.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/os/Packages/g/glibc-minimal-langpack-2.39-58.el10_1.2.x86_64.rpm
+    repoid: ubi-10-for-x86_64-for-x86_64-baseos-rpms
+    size: 46001
+    checksum: sha256:595eb6ca0f1b5883abeef49736d226bf13e4703bfbdbf13e5a12ff3563919c72
+    name: glibc-minimal-langpack
+    evr: 2.39-58.el10_1.2
+    sourcerpm: glibc-2.39-58.el10_1.2.src.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/os/Packages/r/rsync-3.4.1-2.el10.x86_64.rpm
+    repoid: ubi-10-for-x86_64-for-x86_64-baseos-rpms
+    size: 431053
+    checksum: sha256:2f07ced5ddf169cd295f8a0bfde3fa1040648e1a19892a5b4a6636657f425db9
     name: rsync
-    evr: 3.2.5-3.el9
-    sourcerpm: rsync-3.2.5-3.el9.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/os/Packages/t/tar-1.34-7.el9.x86_64.rpm
-    repoid: ubi-9-for-x86_64-baseos-rpms
-    size: 910235
-    checksum: sha256:17f2e592a2c04c050b690afeb9042e02521a0b5ee3288dad837463f4acf542c3
+    evr: 3.4.1-2.el10
+    sourcerpm: rsync-3.4.1-2.el10.src.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/os/Packages/t/tar-1.35-7.el10.x86_64.rpm
+    repoid: ubi-10-for-x86_64-for-x86_64-baseos-rpms
+    size: 887097
+    checksum: sha256:94c290cb710327c72aa792e65a78de5c3f561b225d3cf9d038373328d527a36c
     name: tar
-    evr: 2:1.34-7.el9
-    sourcerpm: tar-1.34-7.el9.src.rpm
-  source:
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/r/rsync-3.2.5-3.el9.src.rpm
-    repoid: ubi-9-for-x86_64-baseos-source-rpms
-    size: 1306931
-    checksum: sha256:a1fd44e58d1fb5b52b72586c5ef2e12c040428f771cde1d1350b36d3b9155db0
-    name: rsync
-    evr: 3.2.5-3.el9
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/t/tar-1.34-7.el9.src.rpm
-    repoid: ubi-9-for-x86_64-baseos-source-rpms
-    size: 2261512
-    checksum: sha256:d002c400d29e7305fe8a982ab6b9f49ee7a8780e4574b86fc0c5b3d5510ecb22
-    name: tar
-    evr: 2:1.34-7.el9
+    evr: 2:1.35-7.el10
+    sourcerpm: tar-1.35-7.el10.src.rpm
+  source: []
   module_metadata: []
