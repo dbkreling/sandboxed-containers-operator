@@ -29,7 +29,7 @@ RUN . ./controller-tools-ver && mv bin/controller-gen bin/controller-gen-$CONTRO
 RUN . ./controller-tools-ver && make build
 
 # Use OpenShift base image
-FROM registry.access.redhat.com/ubi10/ubi-minimal:10.1-1762189261
+FROM registry.access.redhat.com/ubi10/ubi-minimal:10.1-1763362715
 WORKDIR /
 COPY --from=builder /workspace/bin/manager .
 COPY --from=builder /workspace/bin/metrics-server .
