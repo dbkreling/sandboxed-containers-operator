@@ -35,6 +35,7 @@ COPY --from=builder /workspace/bin/manager .
 COPY --from=builder /workspace/bin/metrics-server .
 COPY --from=builder /workspace/config/peerpods /config/peerpods
 
+RUN microdnf update -y && microdnf install shadow-utils tzdata -y && microdnf clean all
 RUN useradd  -r -u 499 nonroot
 RUN getent group nonroot || groupadd -o -g 499 nonroot
 
