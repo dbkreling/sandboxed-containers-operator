@@ -1,8 +1,0 @@
-packages: [tzdata, shadow-utils]
-contentOrigin:
-  repofiles: ["./ubi.repo"]
-arches:
-  - x86_64
-  - s390x
-context:
-  image: registry.access.redhat.com/ubi10/ubi-minimal:10.1-1763362715
