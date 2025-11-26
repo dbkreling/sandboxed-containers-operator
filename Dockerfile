@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/ubi9/go-toolset:1.24.6-1762373805 as builder
+FROM registry.access.redhat.com/ubi9/go-toolset:1.25-1763633888 as builder
 
 # Required by the ubi based go-toolset image
 USER root
@@ -29,13 +29,12 @@ RUN . ./controller-tools-ver && mv bin/controller-gen bin/controller-gen-$CONTRO
 RUN . ./controller-tools-ver && make build
 
 # Use OpenShift base image
-FROM registry.access.redhat.com/ubi10/ubi-minimal:10.1-1763362715
+FROM registry.access.redhat.com/ubi9/ubi-minimal:9.7-1763362218
 WORKDIR /
 COPY --from=builder /workspace/bin/manager .
 COPY --from=builder /workspace/bin/metrics-server .
 COPY --from=builder /workspace/config/peerpods /config/peerpods
 
-RUN microdnf update -y && microdnf install shadow-utils tzdata -y && microdnf clean all
 RUN useradd  -r -u 499 nonroot
 RUN getent group nonroot || groupadd -o -g 499 nonroot
 
